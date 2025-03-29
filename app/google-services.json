@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "569247132262",
+    "project_id": "traffic-sign-detection-fd4f0",
+    "storage_bucket": "traffic-sign-detection-fd4f0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:569247132262:android:7b2b075d5f9d35af939ba7",
+        "android_client_info": {
+          "package_name": "com.example.trafficsigndetectionproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBq7le41lJZWoY6pv7fpoRGCGAxWFA3Q6Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
