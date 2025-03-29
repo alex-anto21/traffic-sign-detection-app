@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity"
+    tools:context=".RegisterActivity"
     android:background="@drawable/profilebkg"
     android:orientation="vertical"
     android:layout_gravity="center">
@@ -30,17 +30,47 @@
             android:background="@drawable/lavender_border">
 
             <TextView
-                android:id="@+id/textViewLogin"
+                android:id="@+id/textViewSignUp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/login_text_view"
+                android:text="@string/signup_text_view"
                 android:textAlignment="center"
                 android:textColor="@color/lavender"
                 android:textSize="36sp"
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/login_mail"
+                android:id="@+id/signup_firstname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:padding="8dp"
+                android:hint="@string/firstname_text_view"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:background="@drawable/lavender_border"
+                android:drawableStart="@drawable/baseline_account_circle_24"
+                android:drawablePadding="8dp"
+                android:ems="13"
+                tools:ignore="Autofill"/>
+
+            <EditText
+                android:id="@+id/signup_lastname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:padding="8dp"
+                android:hint="@string/lastname_text_view"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:background="@drawable/lavender_border"
+                android:drawableStart="@drawable/baseline_account_circle_24"
+                android:drawablePadding="8dp"
+                android:ems="13"
+                tools:ignore="Autofill"/>
+
+            <EditText
+                android:id="@+id/signup_mail"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="40dp"
@@ -55,7 +85,7 @@
                 tools:ignore="Autofill"/>
 
             <EditText
-                android:id="@+id/login_password"
+                android:id="@+id/signup_password"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="40dp"
@@ -70,26 +100,24 @@
                 tools:ignore="Autofill"/>
 
             <Button
-                android:id="@+id/login_button"
+                android:id="@+id/signup_button"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:text="@string/login_text_view"
+                android:text="@string/signup_text_view"
                 android:textSize="18sp"
                 android:layout_marginTop="30dp"
                 app:cornerRadius="20dp"/>
 
             <TextView
-                android:id="@+id/signupredirecttext"
+                android:id="@+id/loginpredirecttext"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:text="@string/loginpredirecttext"
                 android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:clickable="true"
-                android:focusable="true"
                 android:padding="8dp"
-                android:text="@string/singupredirecttext"
-                android:textColor="@color/lavender"
-                android:textSize="18sp" />
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/lavender"/>
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
