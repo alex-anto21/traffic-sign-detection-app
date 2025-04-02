@@ -9,4 +9,5 @@
     <string name="lastname_text_view">Last Name</string>
     <string name="singupredirecttext">Don\'t have an account? Sign up</string>
     <string name="loginpredirecttext">Already have an account? Sign in</string>
+    <string name="delete_account">Delete Account</string>
 </resources>

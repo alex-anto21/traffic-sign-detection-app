@@ -7,16 +7,17 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.trafficsigndetectionproject.databinding.ActivityMainBinding
+import com.example.trafficsigndetectionproject.databinding.ActivityProfileBinding
 import com.google.firebase.auth.FirebaseAuth
 
-class MainActivity : AppCompatActivity() {
+class ProfileActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivityProfileBinding
     private lateinit var firebaseAuth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityProfileBinding.inflate(layoutInflater)
         enableEdgeToEdge()
         setContentView(binding.root)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
@@ -26,17 +27,16 @@ class MainActivity : AppCompatActivity() {
         }
 
         firebaseAuth = FirebaseAuth.getInstance()
-
-        binding.bottomNavigationView.selectedItemId = R.id.bottom_home
+        binding.bottomNavigationView.selectedItemId = R.id.bottom_profile
 
         binding.bottomNavigationView.setOnItemReselectedListener{ item ->
             when(item.itemId){
                 R.id.bottom_home -> {
+                    startActivity(Intent(applicationContext, MainActivity::class.java))
+                    finish()
                     true
                 }
                 R.id.bottom_profile -> {
-                    startActivity(Intent(applicationContext, ProfileActivity::class.java))
-                    finish()
                     true
                 }
                 R.id.bottom_signout -> {
@@ -48,6 +48,5 @@ class MainActivity : AppCompatActivity() {
             }
 
         }
-
     }
 }
