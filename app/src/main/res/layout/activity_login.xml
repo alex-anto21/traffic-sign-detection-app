@@ -79,6 +79,19 @@
                 app:cornerRadius="20dp"/>
 
             <TextView
+                android:id="@+id/forgotpassword"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="8dp"
+                android:text="@string/forgot_password"
+                android:textColor="@color/lavender"
+                android:textSize="18sp" />
+
+            <TextView
                 android:id="@+id/signupredirecttext"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"

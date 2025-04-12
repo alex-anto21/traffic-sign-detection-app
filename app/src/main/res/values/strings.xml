@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">TrafficSignDetectionProject</string>
     <string name="login_text_view">Login</string>
+    <string name="logout_text_view">Logout</string>
     <string name="signup_text_view">Sign Up</string>
     <string name="email_text_view">Email</string>
     <string name="password_text_view">Password</string>
@@ -8,4 +9,6 @@
     <string name="lastname_text_view">Last Name</string>
     <string name="singupredirecttext">Don\'t have an account? Sign up</string>
     <string name="loginpredirecttext">Already have an account? Sign in</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="forgot_password">Forgot your password?</string>
 </resources>
