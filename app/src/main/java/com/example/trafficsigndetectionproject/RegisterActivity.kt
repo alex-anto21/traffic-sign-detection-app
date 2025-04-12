@@ -37,7 +37,7 @@ class RegisterActivity : AppCompatActivity() {
 
         firebaseAuth = FirebaseAuth.getInstance()
         firebaseDatabase = FirebaseDatabase.getInstance("https://traffic-sign-detection-fd4f0-default-rtdb.europe-west1.firebasedatabase.app/")
-        databaseReference = firebaseDatabase.reference.child("users")
+        databaseReference = firebaseDatabase.getReference("users")
 
         binding.signupButton.setOnClickListener {
             // get values from fields

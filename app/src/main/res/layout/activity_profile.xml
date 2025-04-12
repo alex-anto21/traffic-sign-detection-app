@@ -57,11 +57,11 @@
                 android:layout_marginEnd="24dp">
 
                 <TextView
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/profileName"
                     android:layout_weight="1"
-                    android:text="Name"
+                    android:text="First Name"
                     android:textAlignment="viewStart"
                     android:textStyle="bold"
                     android:textColor="@color/lavender"
@@ -74,7 +74,7 @@
                     android:id="@+id/profileNameDB"
                     android:layout_weight="1"
                     android:textAlignment="viewEnd"
-                    android:text="Name"
+                    android:text="First Name"
                     android:textStyle="bold"
                     android:textColor="@color/black"
                     android:textSize="18sp"
